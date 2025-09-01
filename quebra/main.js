@@ -25,8 +25,14 @@ recipent.forEach(radio => {
 })
 
 function mainCalculation() {
-	const calculatedWeightResult = (parseFloat(breakInput.value) - parseFloat(selectedRecipent.value));
-	const calculatedMetreageResult = ((parseFloat(breakInput.value) - parseFloat(selectedRecipent.value)) / parseFloat(selectedTileSize.value));
+	const calculatedWeightResult
+		= (parseFloat(breakInput.value)
+		- parseFloat(selectedRecipent.value));
+	
+	const calculatedMetreageResult
+		= ((parseFloat(breakInput.value)
+		- parseFloat(selectedRecipent.value))
+		/ parseFloat(selectedTileSize.value));
 
 	if (breakInput.value == "") {
 		weightResult.textContent = "0 kg";

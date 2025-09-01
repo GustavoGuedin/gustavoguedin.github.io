@@ -4,10 +4,15 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<title>Calculadora de Quebra</title>
+	<link 
+		href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" 
+		rel="stylesheet" 
+		integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" 
+		crossorigin="anonymous">
+	<link 
+		href="https://fonts.googleapis.com/icon?family=Material+Icons" 
+		rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -21,7 +26,7 @@
 					class="form-control"
 					maxlength=6
 					id="breakInput">
-	
+
 					<div class="spacer"></div>
 	
 					<div class="card">
@@ -29,16 +34,52 @@
 							<h6 class="fw-bold">Tamanho da peça</h6>
 	
 							<div class="btn-group tile-size-selector" role="group">
-								<input type="radio" value=22.38 name="tile-size" class="btn-check" id="49x99" checked>
-								<label class="btn btn-outline-primary" for="49x99">49x99</label>
-								<input type="radio" value=21.19 name="tile-size" class="btn-check" id="50x100">
-								<label class="btn btn-outline-primary" for="50x100">50x100</label>
-								<input type="radio" value=23.08 name="tile-size" class="btn-check" id="60x120">
-								<label class="btn btn-outline-primary" for="60x120">60x120</label>
-								<input type="radio" value=20.62 name="tile-size" class="btn-check" id="60x60">
-								<label class="btn btn-outline-primary" for="60x60">60x60</label>
-								<input type="radio" value=22.18 name="tile-size" class="btn-check" id="84x84">
-								<label class="btn btn-outline-primary" for="84x84">84x84</label>
+								<input 
+									type="radio" 
+									value=22.38 
+									name="tile-size" 
+									class="btn-check" 
+									id="49x99" 
+									checked>
+								<label 
+									class="btn btn-outline-primary" 
+									for="49x99">49x99</label>
+								<input 
+									type="radio" 
+									value=21.19 
+									name="tile-size" 
+									class="btn-check" 
+									id="50x100">
+								<label 
+									class="btn btn-outline-primary" 
+									for="50x100">50x100</label>
+								<input 
+									type="radio" 
+									value=23.08 
+									name="tile-size" 
+									class="btn-check" 
+									id="60x120">
+								<label 
+									class="btn btn-outline-primary" 
+									for="60x120">60x120</label>
+								<input 
+									type="radio" 
+									value=20.62 
+									name="tile-size" 
+									class="btn-check" 
+									id="60x60">
+								<label 
+									class="btn btn-outline-primary" 
+									for="60x60">60x60</label>
+								<input 
+									type="radio" 
+									value=22.18 
+									name="tile-size" 
+									class="btn-check" 
+									id="84x84">
+								<label 
+									class="btn btn-outline-primary" 
+									for="84x84">84x84</label>
 							</div>
 	
 							<div class="spacer"></div>
@@ -46,14 +87,43 @@
 							<h6 class="fw-bold">Recipiente</h6>
 	
 							<div class="btn-group recipent-selector" role="group">
-								<input type="radio" value=83 name="recipent" class="btn-check" id="plataforma" checked>
-								<label class="btn btn-outline-primary" for="plataforma">Plataforma (83 kg)</label>
-								<input type="radio" value=10 name="recipent" class="btn-check" id="palete">
-								<label class="btn btn-outline-primary" for="palete">Palete (10 kg)</label>
-								<input type="radio" value=300 name="recipent" class="btn-check" id="latao">
-								<label class="btn btn-outline-primary" for="latao">Latão (300 kg)</label>
-								<input type="radio" value=0 name="recipent" class="btn-check" id="nenhum">
-								<label class="btn btn-outline-primary" for="nenhum">Nenhum</label>
+								<input 
+									type="radio" 
+									value=83 
+									name="recipent" 
+									class="btn-check" 
+									id="plataforma" 
+									checked>
+								<label 
+									class="btn btn-outline-primary" 
+									for="plataforma">Plataforma<br>(83 kg)</label>
+								<input 
+									type="radio" 
+									value=10 
+									name="recipent" 
+									class="btn-check" 
+									id="palete">
+								<label 
+									class="btn btn-outline-primary" 
+									for="palete">Palete<br>(10 kg)</label>
+								<input 
+									type="radio" 
+									value=300 
+									name="recipent" 
+									class="btn-check" 
+									id="latao">
+								<label 
+									class="btn btn-outline-primary" 
+									for="latao">Latão<br>(300 kg)</label>
+								<input 
+									type="radio" 
+									value=0 
+									name="recipent" 
+									class="btn-check" 
+									id="nenhum">
+								<label 
+									class="btn btn-outline-primary" 
+									for="nenhum">Nenhum<br>(0 kg)</label>
 							</div>
 						</div>
 					</div>
@@ -81,6 +151,12 @@
 	</div>
 
 	<script src="main.js"></script>
+
+	<script 
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" 
+		integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" 
+		crossorigin="anonymous">
+	</script>
 </body>
 
 </html>

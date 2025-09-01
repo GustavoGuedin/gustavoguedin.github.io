@@ -1,3 +1,9 @@
+body {
+    background: url(bg.webp);
+    background-position: center;
+    background-size: cover;
+}
+
 .center {
     display: grid;
     place-content: center;
@@ -6,10 +12,6 @@
 
 .spacer {
     margin: 1.3rem 0;
-}
-
-.outer-card {
-    width: 35rem;
 }
 
 .tile-size-selector {
@@ -32,6 +34,17 @@
 
 .weight-result h6,h2 {
     text-align: start;
+}
+
+.card, .form-control {
+    box-shadow: #00000030 0 2px 4px;
+    background-color: #ffffff80;
+    backdrop-filter: blur(12px);
+}
+
+.outer-card {
+    width: 35rem;
+    box-shadow: #00000030 0 4px 16px;
 }
 
 
