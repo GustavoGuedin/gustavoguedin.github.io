@@ -1,7 +1,7 @@
 body {
     background: url(bg.webp);
     background-position: center;
-    background-size: cover;
+    background-size: none;
 }
 
 .center {
@@ -45,6 +45,13 @@ body {
 .outer-card {
     width: 35rem;
     box-shadow: #00000030 0 4px 16px;
+}
+
+.btn-outline-primary {
+    --bs-btn-color: #212529;
+    --bs-btn-border-color: #cfcfcf;
+    --bs-btn-active-bg: #ff5858;
+    --bs-btn-active-border-color: #cfcfcf;
 }
 
 
