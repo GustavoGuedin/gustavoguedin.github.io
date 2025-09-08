@@ -2,38 +2,22 @@ body {
     background: url(bg.webp);
     background-position: center;
     background-size: none;
+    height: 100dvh;
+    width: 100dvw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 3rem;
+    min-width: 34rem;
 }
 
-.center {
-    display: grid;
-    place-content: center;
-    height: 100vh;
+body html {
+    box-sizing: border-box;
 }
 
 .spacer {
     margin: 1.3rem 0;
-}
-
-.tile-size-selector {
-    width: 100%;
-}
-
-.recipent-selector {
-    width: 100%;
-}
-
-.results-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.metreage-result h6,h2 {
-    text-align: end;
-}
-
-.weight-result h6,h2 {
-    text-align: start;
 }
 
 .card, .form-control {
