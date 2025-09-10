@@ -18,11 +18,13 @@
 <body>
 	<div class="card outer-card">
 		<div class="card-body">
+
 			<input 
 			type="number" 
 			placeholder="Quantidade de quebra em KG" 
 			class="form-control"
-			maxlength=6
+			oninput="//this.value=this.value.slice(0,this.maxLength)"
+			maxlength="6"
 			id="breakInput">
 
 			<div class="spacer"></div>
@@ -87,32 +89,32 @@
 					<div class="btn-group w-100" role="group">
 						<input 
 							type="radio" 
-							value=83 
+							value=66
 							name="recipent" 
 							class="btn-check" 
 							id="plataforma" 
 							checked>
 						<label 
 							class="btn btn-outline-primary" 
-							for="plataforma">Plataforma<br>(83 kg)</label>
+							for="plataforma">Plataforma<br>(66 kg)</label>
 						<input 
 							type="radio" 
-							value=10 
+							value=30
 							name="recipent" 
 							class="btn-check" 
 							id="palete">
 						<label 
 							class="btn btn-outline-primary" 
-							for="palete">Palete<br>(10 kg)</label>
+							for="palete">Palete<br>(30 kg)</label>
 						<input 
 							type="radio" 
-							value=300 
+							value=310
 							name="recipent" 
 							class="btn-check" 
 							id="latao">
 						<label 
 							class="btn btn-outline-primary" 
-							for="latao">Latão<br>(300 kg)</label>
+							for="latao">Latão<br>(310 kg)</label>
 						<input 
 							type="radio" 
 							value=0 
