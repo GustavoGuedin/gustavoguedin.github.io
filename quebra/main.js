@@ -11,11 +11,11 @@ if (!localStorage.getItem("selectedTileSize")) {
 }
 
 function loadValues() {
-	const radio1 = localStorage.getItem("selectedTileSize");
-	const radio2 = localStorage.getItem("selectedRecipent");
+	const tileSizeStoredValue = localStorage.getItem("selectedTileSize");
+	const recipentStoredValue = localStorage.getItem("selectedRecipent");
 	
-	const tileSizeRadio = document.querySelector(`input[name="tile-size"][value="${radio1}"]`);
-	const recipentRadio =  document.querySelector(`input[name="recipent"][value="${radio2}"]`);
+	const tileSizeRadio = document.querySelector(`input[name="tile-size"][value="${tileSizeStoredValue}"]`);
+	const recipentRadio =  document.querySelector(`input[name="recipent"][value="${recipentStoredValue}"]`);
 	
 	try {
 		tileSizeRadio.checked = true;
@@ -75,5 +75,6 @@ function mainCalculation() {
 	}
 	
 }
+
 
 breakInput.addEventListener('input', mainCalculation);
